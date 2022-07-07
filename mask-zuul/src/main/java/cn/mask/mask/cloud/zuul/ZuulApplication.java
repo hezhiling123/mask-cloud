@@ -1,4 +1,4 @@
-package cn.mask.mask.zuul;
+package cn.mask.mask.cloud.zuul;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

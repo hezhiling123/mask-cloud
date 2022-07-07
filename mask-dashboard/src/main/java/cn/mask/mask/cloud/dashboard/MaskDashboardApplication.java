@@ -1,4 +1,4 @@
-package cn.mask.mask.dashboard;
+package cn.mask.mask.cloud.dashboard;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

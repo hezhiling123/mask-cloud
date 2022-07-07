@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: nacos-discovery
+server:
+  port: 7823
+dubbo:
+  application:
+    name: mask-nacos
+    parameters:
+      namespace: 86381884-86d1-481e-8c08-c92d6ef1e80e
+      group: dev
+  registry:
+    address: nacos://:http://42.192.182.126:8848
+  protocol:
+    name: dubbo
+    port: 20880
+nacos:
+  discovery:
+    server-addr: http://42.192.182.126:8848
+    namespace: 111
+    register:
+      group-name: public
+      service-name: mask-nacos
+    auto-register: true

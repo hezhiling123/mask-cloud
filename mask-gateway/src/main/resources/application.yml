@@ -1,0 +1,30 @@
+server:
+  port: 28082
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          lower-case-service-id: true
+          enabled: true
+    nacos:
+      discovery:
+        server-addr: 42.192.182.126:8848
+        namespace: 86381884-86d1-481e-8c08-c92d6ef1e80e
+        group: dev
+      config:
+        namespace: 86381884-86d1-481e-8c08-c92d6ef1e80e
+        group: dev
+        enable-remote-sync-config: true
+        server-addr: 42.192.182.126:8848
+        file-extension: yaml
+        prefix: gateway-dynamic-route-rule
+  application:
+    name: gateway-dynamic-route-rule
+  redis:
+    host: 42.192.182.126
+    port: 6379
+    database: 0
+logging:
+  pattern:
+    level: info

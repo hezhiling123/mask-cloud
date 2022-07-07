@@ -94,7 +94,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>cn.mask.mask.config.MaskConfigApplication</mainClass>
+                    <mainClass>cn.mask.mask.cloud.config.MaskConfigApplication</mainClass>
                 </configuration>
             </plugin>
             <plugin>
